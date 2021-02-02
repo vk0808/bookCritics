@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>How to write a Book?</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-social@5.1.1/bootstrap-social.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Font: Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/subscribe.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/carousel.css">
+    <link rel="stylesheet" href="../css/quote.css">
+    <link rel="stylesheet" href="../css/books.css">
+
+
+</head>
+
+<body>
+	<!-- Navigation Bar -->
+    <nav class="navbar navbar-dark fixed-top">
+        <div class="container navbar-expand-md">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="../docs/home.html"> bookCritics</a>               
+            <div class="collapse navbar-collapse" id="Navbar">
+                <div class="navbar-nav  ml-auto">
+                    <ul class="navbar-nav">
+                        <li class="nav-items"><a class="nav-link" href="../docs/home.html">Home</a></li>
+                        <li class="nav-items"><a class="nav-link" href="../docs/blog.html">Blog</a></li>
+                        <li class="nav-items"><a class="nav-link" href="../docs/aboutus.html">About</a></li>
+                        <li class="nav-items"><a class="nav-link" data-toggle="modal" data-target="#LoginModal">Login</a></li>
+                    </ul>
+
+                    <div class="nav-item dropdown search-dropdown mr-auto">
+                        <a data-toggle="dropdown" class="nav-item nav-link dropdown-toggle" href="#"><i class="fa fa-search"></i></a>
+                        <a data-toggle="dropdown" class="nav-item nav-link dropdown-toggle d-none" href="#"><i class="fa fa-close"></i></a>
+                        <div class="dropdown-menu">
+                            <div>
+                                <form>
+                                    <div class="input-group search-box">                                
+                                        <input type="text" id="search" class="form-control" placeholder="Search here...">
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </form>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="LoginModal" role="dialog">
+        <div class="modal-dialog modal-login modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="avatar">
+                        <img src="../img/avatar.png" alt="Avatar">
+                    </div>
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <div class="form-group">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="remember">
+                                    <label class="form-check-label" for="remember"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Login</button>        
+                        </div>
+                    </form>                 
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Forgot Password?</a>
+                    <a data-toggle="modal" data-target="#SignUpModal" data-dismiss="modal">Not a Member?</a>
+                </div>           
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign up Modal -->
+    <div class="modal fade" id="SignUpModal" role="dialog">
+        <div class="modal-dialog modal-lg modal-signup" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="avatar">
+                        <img src="../img/avatar.png" alt="Avatar">
+                    </div>
+                    <h4 class="modal-title">Signup</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="sr-only" for="signup_name1">Full Name </label>
+                            <input type="text" class="form-control form-control-sm" id="signup_name1" placeholder="Full Name">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="signup_username1">Username </label>
+                            <input type="text" class="form-control form-control-sm" id="signup_username1" placeholder="Username">
+                        </div>                          
+                        <div class="form-group">
+                            <label class="sr-only" for="signup_email1">Email </label>
+                            <input type="email" class="form-control form-control-sm" id="signup_email1" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="signup_password1">Password</label>
+                            <input type="password" class="form-control form-control-sm" id="signup_password1" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="signup_password2">Confirm Password</label>
+                            <input type="password" class="form-control form-control-sm" id="signup_password2" placeholder="Confirm Password">
+                        </div>                            
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="accepttn">
+                                <label class="form-check-label" for="accepttn"> Accept terms and conditions
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block signup-btn">Signup</button>        
+                        </div>
+                    </form>                    
+                </div>
+                <div class="modal-footer">
+                    <a data-toggle="modal" data-target="#LoginModal" data-dismiss="modal">Already a member?</a>
+                </div>               
+            </div>
+        </div>
+    </div>
+
+    <!-- Book Info -->
+    <div class="container-xl">
+        <div class="row">
+            <div class="col-md-10 mx-auto mb-3">
+                <section aria-label="Book Information" class="bookpage_container">
+
+                    <!-- Breadcrumb -->
+                    <nav aria-label="breadcrumb" class="mt-5 pt-4 mb-5">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="../docs/home.html">Home</a></li>
+                            <li class="breadcrumb-item active">How to write a Book?</li>
+                        </ol>
+                    </nav>
+
+                    <!-- Book Container -->
+                    <div class="columns_container">
+                        <div class="left_col">
+                            <div class="cover main_thumbnail_container start_reading_cover">
+                                <div class="document_cell">
+                                    <div class="document_image">
+                                        <img class="loaded" src="../img/Empty-Book-Cover.png" alt="Book Cover">
+                                    </div>
+                                </div>
+                                <dl class="metadata">
+                                    <dt class="meta_title publisher">Publisher: </dt>
+                                    <dd class="meta_description publisher">XYZ Publisher</dd>
+                                    <dt class="meta_title released_date">Released: </dt>
+                                    <dd class="meta_description released_date">Jan 10, 2018</dd>
+                                    <dt class="meta_title category">Total pages: </dt>
+                                    <dd class="meta_description category">600 pages</dd>
+                                    <dt class="meta_title isbn">ISBN: </dt>
+                                    <dd class="meta_description isbn">1234567890123</dd>
+                                    <dt class="meta_title category">Category: </dt>
+                                    <dd class="meta_description category">Fiction</dd>
+                                </dl>
+                            </div> 
+                        </div>
+
+                        <section class="right_col">
+                            <h1 class="document_title">How to write a book?</h1>
+                            <div class="contributors">
+                                <p class="contributor_line">By 
+                                    <span><a class="contributor" href="#author_tag">Author</a></span>
+                                </p>
+                            </div>
+
+                            <div class="ratings_container">
+                                <span class="ratings_wrapper">
+                                    <div class="auto__shared__star_ratings star_ratings">
+                                        <span>
+                                            <span class="stars">
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </span>
+                                            <span class="stats" tabindex="0">
+                                                <span>(1,511 ratings)</span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </span>
+                            </div>
+
+                            <div class="editorial_blurb">
+                                <h2 class="editorial_header">Editor's Note</h2>
+                                <div class="blurb_description">
+                                    In arcu cursus euismod quis viverra nibh. Integer eget aliquet nibh praesent tristique magna sit amet. Suspendisse sed nisi lacus sed viverra tellus in. Non tellus orci ac auctor augue mauris augue neque. Ultrices sagittis orci a scelerisque purus semper eget. Eu augue ut lectus arcu bibendum at. Nunc mattis enim ut tellus elementum. Quam adipiscing vitae proin sagittis.
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <h2 class="summary_header">Summary</h2>
+                                <div>
+                                    <div style="overflow-wrap: break-word;" class="ddd-truncated">
+                                        <div>
+                                            Viverra maecenas accumsan lacus vel facilisis volutpat est. Tellus orci ac auctor augue mauris augue neque gravida. In arcu cursus euismod quis viverra nibh. Integer eget aliquet nibh praesent tristique magna sit amet. Suspendisse sed nisi lacus sed viverra tellus in. 
+                                            <br><br>
+                                            Non tellus orci ac auctor augue mauris augue neque. Ultrices sagittis orci a scelerisque purus semper eget. Eu augue ut lectus arcu bibendum at. Nunc mattis enim ut tellus elementum. Quam adipiscing vitae proin sagittis.
+                                            <br><br>
+                                            <div id="summary_more-info" class="collapse">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisi etiam dignissim diam quis enim lobortis scelerisque. Lectus nulla at volutpat diam ut venenatis tellus in. Quam id leo in vitae turpis massa sed. Sit amet luctus venenatis lectus magna fringilla. 
+                                                <br><br>
+                                                Lorem ipsum dolor sit amet consectetur. Faucibus vitae aliquet nec ullamcorper sit amet risus. Pharetra et ultrices neque ornare aenean euismod elementum nisi quis. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Viverra maecenas accumsan lacus vel facilisis volutpat est.
+                                                <br><br>
+                                                </div>
+                                            </div>
+                                            <button id="summary_more-btn" data-toggle="collapse" data-target="#summary_more-info" class="wrapper__text_button" type="button" onclick="read_msg_2()">Read more</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+                <!-- Section Breaker -->
+                <div class="book_page_review_divider_wrapper">
+                    <hr class="book_page_review_divider">
+                </div>
+                
+                <!-- Author Profile -->
+                <div class="about_author_container" id="author_tag">
+                    <h2 class="section_header">About the author</h2>
+                    <div class="author_banner">
+                        <div class="author_profile">
+                            <!-- Author Image -->
+                            <div>
+                                <div class="auto__shared__persona_icon persona_icon profile_thumbnail large">
+                                    <img src="../img/avatar.png" alt="Author">
+                                </div>
+                            </div>
+
+                            <!-- Author Name -->
+                            <div class="author_name">
+                                <span>Author</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <div class="wrapper__book_preview_components_about_author">
+                                    <div class="author_description">
+                                    Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Viverra maecenas accumsan lacus vel facilisis volutpat est. Tellus orci ac auctor augue mauris augue neque gravida. In arcu cursus euismod quis viverra nibh. Integer eget aliquet nibh praesent tristique magna sit amet. Suspendisse sed nisi lacus sed viverra tellus in.
+                                    <br><br>
+                                        <div id="author_more-info" class="collapse">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisi etiam dignissim diam quis enim lobortis scelerisque. Lectus nulla at volutpat diam ut venenatis tellus in. Quam id leo in vitae turpis massa sed. Sit amet luctus venenatis lectus magna fringilla. Lorem ipsum dolor sit amet consectetur. Faucibus vitae aliquet nec ullamcorper sit amet risus. Pharetra et ultrices neque ornare aenean euismod elementum nisi quis. 
+                                        <br><br>
+                                        Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Viverra maecenas accumsan lacus vel facilisis volutpat est. Tellus orci ac auctor augue mauris augue neque gravida. In arcu cursus euismod quis viverra nibh. Integer eget aliquet nibh praesent tristique magna sit amet. Suspendisse sed nisi lacus sed viverra tellus in. Non tellus orci ac auctor augue mauris augue neque. Ultrices sagittis orci a scelerisque purus semper eget. Eu augue ut lectus arcu bibendum at. Nunc mattis enim ut tellus elementum. Quam adipiscing vitae proin sagittis.
+                                        <br><br>
+                                        </div>
+                                    </div>
+                                    <button id="author_more-btn" data-toggle="collapse" data-target="#author_more-info" class="wrapper__text_button" type="button" onclick="read_msg_1()">Read more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section Breaker -->
+                <div class="book_page_review_divider_wrapper">
+                    <hr class="book_page_review_divider">
+                </div>
+
+                <!-- Ratings & Reviews Section -->
+                <div class="all_reviews_container">
+                    <div class="review_overview_wrapper">
+                        <h2 class="reviews_header">Ratings & Reviews</h2>
+                    </div>
+                    <!-- Ratings -->
+                    <section class="wrapper__book_preview_components_reviews_overview">
+                        <div class="review_overview_wrapper">
+                            <div class="auto__shared__star_ratings star_ratings">
+                                <data class="ratings_average" value="4">4/5</data>
+                                <span>
+                                    <!-- <span class="stars">
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </span> -->
+                                    <span class="stats" tabindex="0">
+                                        <span>(1,511 ratings)</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <hr>
+
+                            <!-- Ratings Bar -->
+                            <div class="ratings_bar">
+                                <div class="ratings_side">
+                                    <div>5 star</div>
+                                </div>
+                                <div class="middle">
+                                    <div class="bar-container">
+                                        <div class="bar-5"></div>
+                                    </div>
+                                </div>
+                                <div class="ratings_side right">
+                                    <div>410</div>
+                                </div>
+                                <div class="ratings_side">
+                                    <div>4 star</div>
+                                </div>
+                                <div class="middle">
+                                    <div class="bar-container">
+                                        <div class="bar-4"></div>
+                                    </div>
+                                </div>
+                                <div class="ratings_side right">
+                                    <div>743</div>
+                                </div>
+                                <div class="ratings_side">
+                                    <div>3 star</div>
+                                </div>
+                                <div class="middle">
+                                    <div class="bar-container">
+                                        <div class="bar-3"></div>
+                                    </div>
+                                </div>
+                                <div class="ratings_side right">
+                                    <div>132</div>
+                                </div>
+                                <div class="ratings_side">
+                                    <div>2 star</div>
+                                </div>
+                                <div class="middle">
+                                    <div class="bar-container">
+                                        <div class="bar-2"></div>
+                                    </div>
+                                </div>
+                                <div class="ratings_side right">
+                                    <div>50</div>
+                                </div>
+                                <div class="ratings_side">
+                                    <div>1 star</div>
+                                </div>
+                                <div class="middle">
+                                    <div class="bar-container">
+                                        <div class="bar-1"></div>
+                                    </div>
+                                </div>
+                                <div class="ratings_side right">
+                                    <div>176</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Critic Reviews -->
+                    <div class="wrapper__book_preview_components_critic_reviews">
+                        <div class="review_list_wrapper">
+                            <h3 class="review_list_header">Critic reviews</h3>
+                            <hr>
+                            <ul class="critic_reviews_list">
+                                <li class="critic_review">
+                                    <p class="text">"An excellent addition to the genre.How to write a book? had standard tropes delivered with a smooth writing style.This was a smooth flowing story with lots of action and very likeable characters.The dialogue in How to write a book? was nice and tight."</p><p class="author">Review Editors</p>
+                                </li>
+                                <li class="critic_review">
+                                    <p class="text">"I would recommend How to write a book? to any fan of the genre.How to write a book? was a great example of the genre.How to write a book? was a joy to read."</p><p class="author">Review Editors</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Reader's Reviews -->
+                    <div class="review_list_wrapper">
+                        <h3 class="review_list_header">Reader reviews</h3>
+                        <hr>
+                        <div class="auto__book_preview_components_reviews_review_list review_list">
+
+                            <!-- Review list item 1 -->
+                            <div class="book_review_wrapper">
+                                <div class="book_review">
+                                    <div class="ratings">
+                                        <!-- Review left -->
+                                        <div class="user_name">alan</div>
+                                        <div class="auto__shared__star_ratings">
+                                            <span class="stars">
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star checked"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Review right -->
+                                    <div class="reviews">
+                                        <div class="wrapper__review_text">
+                                            <div class="review_text">
+                                                <div>
+                                                    The story was beautifully written, with a consistent style and tone, and efficiency of description that didn't slow the pace.How to write a book? was original, and well written. 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Review list item 2 -->
+                            <div class="book_review_wrapper">
+                                <div class="book_review">
+                                    <div class="ratings">
+
+                                        <!-- Review left -->
+                                        <div class="user_name">smith</div>
+                                        <div class="auto__shared__star_ratings">
+                                            <span class="stars">
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Review right -->
+                                    <div class="reviews">
+                                        <div class="wrapper__review_text">
+                                            <div class="review_text">
+                                                <div>
+                                                    How to write a book? kept me interested until the end.How to write a book? was a very good and interesting read.How to write a book? had true potential.If you want engaging material, then look no further.How to write a book? was well written and engaging.How to write a book? evoked emotion. 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- User Reviews -->
+                    <div class="review_form_wrapper">
+                        <div class="auto__shared__review_form review_form">
+                            <div class="star_label">
+                                <span class="star_label_text">What did you think?</span>
+                                <div class="auto__shared__star_ratings star_ratings">
+                                    <div class="star_container">
+                                        <div class="write_stars">
+                                            <input type="radio" name="difficulty" id="difficulty-5" hidden>
+                                                <label for="difficulty-5">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </label>
+                                                <input type="radio" name="difficulty" id="difficulty-4" hidden>
+                                                <label for="difficulty-4">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </label>
+                                                <input type="radio" name="difficulty" id="difficulty-3" hidden>
+                                                <label for="difficulty-3">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </label>
+                                                <input type="radio" name="difficulty" id="difficulty-2" hidden>
+                                                <label for="difficulty-2">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </label>
+                                                <input type="radio" name="difficulty" id="difficulty-1" hidden checked>
+                                                <label for="difficulty-1">
+                                                    <i class="fa fa-star"></i>
+                                              </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrapper__text_area textarea_component">
+                                <div class="textarea_label">
+                                    <label for="textarea_2">
+                                        <span class="label_text">Write a review </span>
+                                        <span class="optional_text">(optional)</span>
+                                        <textarea name="text" class="review_body" maxlength="20000" spellcheck="false"></textarea>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button type="button" class="post_review btn btn-primary">
+                            <a href="./books.html" title="Post Review">Post Review</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Subscription Section -->
+    <div class="home-newsletter">
+        <div class="container">
+            <div class="row text-center">
+                <div class="icon-box mx-auto single">
+                    <i id="icon-box1" class="fa fa-envelope-open-o"></i>
+                    <span><h4 class="font-weight-bold">Subscribe To Our Newsletter</h4></span>
+                    <p>Want to get updated on the latest release of new books, subscribe to our newsletter and get delivered directly in your inbox.</p>
+                    <div class="input-group">
+                        <form class="form-inline mx-auto" role="form">
+                            <div class="form-group">
+                                <label class="sr-only" for="subscribe-email">Email Address</label>
+                                <input type="email" name="subscribe-email" placeholder="Email Address..." class="subscribe-email form-control" id="subscribe-email" required pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$">
+                                <button type="submit" class="btn btn-info sub-btn">
+                                    <a data-toggle="modal">Subscribe</a>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="alert alert-warning no-email-msg mt-3">
+                        <strong>Warning!</strong> I think you have not entered Email.
+                    </div>
+                    <div class="alert alert-warning error-msg mt-3">
+                        <strong>Warning!</strong> I think you have entered invalid Email.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subscribe Modal -->
+    <div id="subscribeModal" class="modal fade ">
+        <div class="md1 modal-dialog modal-confirm">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <div class="icon-box">
+                        <i class="material-icons">&#xE876;</i>
+                    </div>
+                    <button type="button" class="close close_click" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body text-center">
+                    <h4>Great!</h4> 
+                    <p>You have been added to our newsletter list.</p>
+                    <button class="btn btn-success close_click" data-dismiss="modal"><span>Start Exploring</span> <i class="material-icons">&#xE5C8;</i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer jumbotron mt-3 mb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <h4 class="font-weight-bold">About</h4>
+                    <p><strong>bookCritics</strong> is an online book review platform. This service connects the world's best critics with subscribers around a topic and allows them to post reviews on topics such as genre, books per month or overall popularity.
+                    </p>
+                    <button class="btn btn-info">
+                        <a class="text-dark" href="../docs/aboutus.html">Read More</a>
+                    </button>
+                </div>
+                <div class="offset-md-1 col-md-5 mb-3">
+                    <h4 class="font-weight-bold">Social Media Presence</h4>
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><span class="fa fa-facebook fa-lg"></span></a></li>
+                        <li class="list-inline-item"><a class="btn btn-social-icon btn-instagram" href="http://instagram.com/+"><span class="fa fa-instagram fa-lg"></span></a></li>
+                        <li class="list-inline-item"><a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><span class="fa fa-linkedin fa-lg"></span> </a></li>
+                        <li class="list-inline-item"><a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><span class="fa fa-twitter fa-lg"></span></a></li>
+                        <li class="list-inline-item"><a class="btn btn-social-icon btn-google" href="http://youtube.com/"><span class="fa fa-youtube fa-lg"></span></a></li>
+                        <li class="list-inline-item"><a class="btn btn-social-icon" href="mailto:"><span class="fa fa-envelope-o fa-lg"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Copyright -->
+    <div class="copyright text-center bg-dark mb-0 text-white">
+        <div class="container">
+            <div class="col-auto">
+                <small>Copyright &copy; 2021 bookCritics All right reserved.</small>
+            </div>
+        </div>
+    </div> 
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/search.js"></script>
+    <script type="text/javascript" src="../js/subscribe.js"></script>
+    <script type="text/javascript" src="../js/carousel.js"></script>
+
+    <script type="text/javascript">
+        function read_msg_1() {
+            var change1 = document.querySelector("#author_more-btn");
+            if (change1.innerHTML == "Read more")
+            {
+                change1.innerHTML = "Read less";
+            }
+            else if (change1.innerHTML == "Read less") {
+                change1.innerHTML = "Read more";
+            }
+            
+        }
+
+        function read_msg_2 () {
+           var change2 = document.querySelector("#summary_more-btn");
+            if (change2.innerHTML == "Read more")
+            {
+                change2.innerHTML = "Read less";
+            }
+            else if (change2.innerHTML == "Read less") {
+                change2.innerHTML = "Read more";
+            } 
+        }
+    </script>
+
+</body>
+</html>
