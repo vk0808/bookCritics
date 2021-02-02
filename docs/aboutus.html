@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>About Us</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-social@5.1.1/bootstrap-social.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Font: Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/subscribe.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/carousel.css">
+    <link rel="stylesheet" href="../css/quote.css">
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark fixed-top">
+        <div class="container navbar-expand-md">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="./home.html"> bookCritics</a>               
+            <div class="collapse navbar-collapse" id="Navbar">
+                <div class="navbar-nav  ml-auto">
+                    <ul class="navbar-nav">
+                        <li class="nav-items"><a class="nav-link" href="./home.html">Home</a></li>
+                        <li class="nav-items"><a class="nav-link" href="./blog.html">Blog</a></li>
+                        <li class="nav-items active"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-items"><a class="nav-link" data-toggle="modal" data-target="#LoginModal">Login</a></li>
+                    </ul>
+
+                    <div class="nav-item dropdown search-dropdown mr-auto">
+                        <a data-toggle="dropdown" class="nav-item nav-link dropdown-toggle" href="#"><i class="fa fa-search"></i></a>
+                        <a data-toggle="dropdown" class="nav-item nav-link dropdown-toggle d-none" href="#"><i class="fa fa-close"></i></a>
+                        <div class="dropdown-menu">
+                            <div>
+                                <form>
+                                    <div class="input-group search-box">                                
+                                        <input type="text" id="search" class="form-control" placeholder="Search here...">
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </form>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="LoginModal" role="dialog">
+        <div class="modal-dialog modal-login modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="avatar">
+                        <img src="../img/avatar.png" alt="Avatar">
+                    </div>
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <div class="form-group">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="remember">
+                                    <label class="form-check-label" for="remember"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Login</button>        
+                        </div>
+                    </form>                 
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Forgot Password?</a>
+                    <a data-toggle="modal" data-target="#SignUpModal" data-dismiss="modal">Not a Member?</a>
+                </div>           
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign up Modal -->
+    <div class="modal fade" id="SignUpModal" role="dialog">
+        <div class="modal-dialog modal-lg modal-signup" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="avatar">
+                        <img src="../img/avatar.png" alt="Avatar">
+                    </div>
+                    <h4 class="modal-title">Signup</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="sr-only" for="signup_name1">Full Name </label>
+                            <input type="text" class="form-control form-control-sm" id="signup_name1" placeholder="Full Name">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="signup_username1">Username </label>
+                            <input type="text" class="form-control form-control-sm" id="signup_username1" placeholder="Username">
+                        </div>                          
+                        <div class="form-group">
+                            <label class="sr-only" for="signup_email1">Email </label>
+                            <input type="email" class="form-control form-control-sm" id="signup_email1" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="signup_password1">Password</label>
+                            <input type="password" class="form-control form-control-sm" id="signup_password1" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="signup_password2">Confirm Password</label>
+                            <input type="password" class="form-control form-control-sm" id="signup_password2" placeholder="Confirm Password">
+                        </div>                            
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="accepttn">
+                                <label class="form-check-label" for="accepttn"> Accept terms and conditions
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block signup-btn">Signup</button>        
+                        </div>
+                    </form>                    
+                </div>
+                <div class="modal-footer">
+                    <a data-toggle="modal" data-target="#LoginModal" data-dismiss="modal">Already a member?</a>
+                </div>               
+            </div>
+        </div>
+    </div>
+
+    <!-- About us -->
+    <div class="container-xl about">
+        <div class="row row-content">
+            <div class="col-sm-8 mx-auto">
+                <div class="about-intro">
+                    <h4 class="font-weight-bold text-center">About</h4>
+                    <p><strong>bookCritics</strong> is an online book review platform. This service connects the world's best critics with subscribers around a topic and allows them to post reviews on topics such as genre, books per month or overall popularity.
+                    </p>
+                    <p>
+                    The reviews and recommendations will help you choose the best book for you. Our goal is to create a system that offers you the greatest amount of information. Reviews provide readers with valuable insight into how their favorite authors have used the products they review.
+                    </p>
+                    <p>We believe books makes life better!</p>
+                    <p>Everyone should read - reading can put our brains into a pleasurable trance-like state, similar to meditation, and it brings the same health benefits of deep relaxation and inner calm. Regular readers sleep better, have lower stress levels, higher self-esteem, and lower rates of depression than non-readers.</p>
+                    <p>The greatest recommenders of books are people, not computer algorithms.</p>
+                    <p>Online communities should be friendly, supportive environments with helpful admins and staff who really listen.</p>              
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Members -->
+        <div class="row row-content">
+            <div class="col-sm-9 mx-auto">
+                <h2 class="text-center font-weight-bold">Team Members</h2>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>   
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="img-box"><img class="rounded" style="width: 100px; height: 100px;" src="../img/men.png" alt="Paula Wilson"></div>
+                            <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+                            <p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="img-box"><img class="rounded" style="width: 100px; height: 100px;" src="../img/men.png" alt="Antonio Moreno"></div>
+                            <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+                            <p class="overview"><b>Antonio Moreno</b>, Web Developer</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="img-box"><img class="rounded" style="width: 100px; height: 100px;" src="../img/woman.png" alt="Michael Holz"></div>
+                            <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
+                            <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+                        </div>
+                    </div>
+                    <!-- Carousel controls -->
+                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Connect with us -->
+        <div class="row">
+            <div class="col-sm-8 text-center mt-4 mb-4 mx-auto p-4">
+              <h2 class="slab-headline">Connect with us</h2>
+              <p>We’d love to hear from you on <a href="https://www.facebook.com/"><span class="fa fa-facebook fa-lg"></a> or <a href="https://twitter.com/"><span class="fa fa-twitter fa-lg"></span></a> Or you can drop us an email directly at <a href="mailto:"><span class="fa fa-envelope-o fa-lg"></a>
+            </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Subscription Section -->
+    <div class="home-newsletter">
+        <div class="container">
+            <div class="row text-center">
+                <div class="icon-box mx-auto single">
+                    <i id="icon-box1" class="fa fa-envelope-open-o"></i>
+                    <span><h4  class="font-weight-bold">Subscribe To Our Newsletter</h4></span>
+                    <p>Want to get updated on the latest release of new books, subscribe to our newsletter and get delivered directly in your inbox.</p>
+                    <div class="input-group">
+                        <form class="form-inline mx-auto" role="form">
+                            <div class="form-group">
+                                <label class="sr-only" for="subscribe-email">Email Address</label>
+                                <input type="email" name="subscribe-email" placeholder="Email Address..." class="subscribe-email form-control" id="subscribe-email" required pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$">
+                                <button type="submit" class="btn btn-info sub-btn">
+                                    <a data-toggle="modal">Subscribe</a>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="alert alert-warning no-email-msg mt-3">
+                        <strong>Warning!</strong> I think you have not entered Email.
+                    </div>
+                    <div class="alert alert-warning error-msg mt-3">
+                        <strong>Warning!</strong> I think you have entered invalid Email.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subscribe Modal -->
+    <div id="subscribeModal" class="modal fade ">
+        <div class="md1 modal-dialog modal-confirm">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <div class="icon-box">
+                        <i class="material-icons">&#xE876;</i>
+                    </div>
+                    <button type="button" class="close close_click" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body text-center">
+                    <h4>Great!</h4> 
+                    <p>You have been added to our newsletter list.</p>
+                    <button class="btn btn-success close_click" data-dismiss="modal"><span>Start Exploring</span> <i class="material-icons">&#xE5C8;</i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer jumbotron mt-3 mb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <h4 class="font-weight-bold">bookCritics</h4>
+                    <ul class="footer_list">
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>   
+                <div class="offset-md-1 col-md-5 mb-3">
+                    <h4 class="font-weight-bold">Social Media Presence</h4>
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><span class="fa fa-facebook fa-lg"></span></a></li>
+                        <li class="list-inline-item"><a class="btn btn-social-icon btn-instagram" href="http://instagram.com/+"><span class="fa fa-instagram fa-lg"></span></a></li>
+                        <li class="list-inline-item"><a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><span class="fa fa-linkedin fa-lg"></span> </a></li>
+                        <li class="list-inline-item"><a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><span class="fa fa-twitter fa-lg"></span></a></li>
+                        <li class="list-inline-item"><a class="btn btn-social-icon btn-google" href="http://youtube.com/"><span class="fa fa-youtube fa-lg"></span></a></li>
+                        <li class="list-inline-item"><a class="btn btn-social-icon" href="mailto:"><span class="fa fa-envelope-o fa-lg"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Copyright -->
+    <div class="copyright text-center bg-dark mb-0 text-white">
+        <div class="container">
+            <div class="col-auto">
+                <small>Copyright &copy; 2021 bookCritics All right reserved.</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/search.js"></script>
+    <script type="text/javascript" src="../js/subscribe.js"></script>
+    <script type="text/javascript" src="../js/carousel.js"></script>
+
+</body>
+</html>
