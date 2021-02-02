@@ -1,0 +1,55 @@
+/*** Body ***/
+body {
+	font-family: 'Varela Round', sans-serif;
+}
+
+/* Nav bar */
+.navbar {
+	font-family: Barlow, Helvetica, Arial, sans-serif;
+}
+
+/* All Jumbotron */
+.jumbotron {
+	background-color: #E8BCC9;
+	font-family: Barlow, Helvetica, Arial, sans-serif;
+	padding-bottom: 30px; 
+}
+
+/* Join btn */
+.join_info h4 {
+	font-weight: bold;
+}
+
+/* Padding for fixed nav */
+.jumbotron, .about {
+	padding: 70px 0px 0px 0px;
+}
+
+/* Home Intro */
+.home_intro-head {
+	padding: 30px 15px 15px;
+	font-size: 40px;
+    font-weight: 600;
+}
+
+
+/* About page Intro */
+.about-intro {
+	padding: 30px;
+}
+
+
+/* All pages about link */
+.btn-info a {
+	text-decoration: none;
+}
+
+/* ABoutus.html page Footer */
+.footer_list li {
+	list-style: none;
+}
+
+.footer_list a {
+	text-decoration: none;
+	color: #000;
+}

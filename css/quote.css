@@ -1,0 +1,44 @@
+#quotes {
+	background-color: #17a2b8;
+}
+
+.pages_home_featured-quote {
+    padding-bottom:  30px;
+}
+
+.pages_home_featured-quote_title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    margin-bottom: 10px;
+}
+
+.pages_home_featured-quote_title::after {
+    content: "";
+    background-color: #fff;
+    width: 100px;
+    height: 1px;
+    display: block;
+    margin: 20px auto;
+}
+
+.pages_home_featured-quote_blockquote {
+    color: #333;
+    margin: 15px 0;
+}
+
+.pages_home_featured-quote_blockquote span {
+    display: block;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.pages_home_featured-quote_blockquote cite {
+    display: block;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 20px;
+    line-height: 15px;
+}
