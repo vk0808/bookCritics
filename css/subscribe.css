@@ -1,0 +1,153 @@
+/*** Section ***/
+#icon-box1{
+	font-size: 1.3rem;
+	color: #7265ea;
+	font-weight: bold; 
+}
+
+.home-newsletter .single {
+    max-width: 650px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.home-newsletter .single .form-control {
+    height: 50px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 20px 0 0 20px;
+}
+
+.home-newsletter .single .form-control:focus {
+    box-shadow: none;
+    border-color: #243c4f;
+}
+
+.home-newsletter .single .sub-btn {
+    min-height: 50px;
+    border-radius: 0 20px 20px 0;
+    background: #243c4f;
+    color: #fff;
+}
+
+/*** Modal ***/
+.modal-confirm {		
+	color: #434e65;
+	width: 300px;
+}
+
+.modal-confirm .modal-content {
+	padding: 20px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+}
+.modal-confirm .modal-header {
+	background: #47c9a2;
+	border-bottom: none;   
+	position: relative;
+	text-align: center;
+	margin: -20px -20px 0;
+	border-radius: 5px 5px 0 0;
+	padding: 20px;
+}
+.modal-confirm h4 {
+	text-align: center;
+	font-size: 1.8rem;
+	margin: 10px 0;
+}
+.modal-confirm .form-control, .modal-confirm .btn {
+	min-height: 40px;
+	border-radius: 3px; 
+}
+.modal-confirm .close {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	color: #fff;
+	text-shadow: none;
+	opacity: 0.5;
+}
+.modal-confirm .close:hover {
+	opacity: 0.8;
+}
+.modal-confirm .icon-box {
+	color: #fff;		
+	width: 95px;
+	height: 95px;
+	display: inline-block;
+	border-radius: 50%;
+	z-index: 9;
+	border: 5px solid #fff;
+	padding: 15px;
+	text-align: center;
+}
+.modal-confirm .icon-box i {
+	font-size: 64px;
+	margin: -4px 0 0 -4px;
+}
+
+.modal-confirm .btn, .modal-confirm .btn:active {
+	color: #fff;
+	border-radius: 4px;
+	background: #eeb711 !important;
+	text-decoration: none;
+	transition: all 0.4s;
+	line-height: normal;
+	border-radius: 30px;
+	margin-top: 10px;
+	padding: 6px 20px;
+	border: none;
+}
+.modal-confirm .btn:hover, .modal-confirm .btn:focus {
+	background: #eda645 !important;
+	outline: none;
+}
+.modal-confirm .btn span {
+	margin: 1px 3px 0;
+	float: left;
+}
+.modal-confirm .btn i {
+	margin-left: 1px;
+	font-size: 20px;
+	float: right;
+}
+
+/*** Media Queries ***/
+@media (max-width: 575px){
+	
+	/* Section */ 
+	.modal-confirm {		
+		width: 80%;
+		left: 8%;
+	}
+
+	/* Modal */
+	.single h4, .single p {
+		margin: 0 20px 10px 20px;
+	}
+
+
+	.home-newsletter .single .form-control {
+	    height: 40px;
+	    width: 200px;
+	    border-radius: 10px;
+	    margin-bottom: 10px;
+	}
+
+	.home-newsletter .single .form-control:focus {
+	    box-shadow: none;
+	    border-color: #243c4f;
+	}
+
+	.home-newsletter .single .sub-btn {
+	    min-height: 40px;
+	    border-radius: 10px;
+	}
+
+}
+
+/*** Error message ***/
+.no-email-msg, .error-msg{
+	display: none;
+}
+
