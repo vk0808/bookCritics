@@ -6,7 +6,7 @@ To view deomo [Clicke here](https://github.com/vk0808/bookCritics.io/docs/home.h
 
 ## About
 **Version 1.0.0** : 
-This project is a replica of a book review site which offers information regarding books such as Publication, Author, ISBN, Ratings, and Reviews. It also includes a section for blogging.
+This project is a replica of a book review site that offers information regarding books such as Publication, Author, ISBN, Ratings, and Reviews. It also includes a section for blogging.
 
 ---
 
