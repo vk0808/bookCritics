@@ -1,0 +1,59 @@
+/* Featured books */
+.feature-slide img {
+	width: 100%;
+}
+
+.feature-slide {
+  width: 200px;
+  padding: 2vw 1vw 0 2vw;
+  height: 260px;
+  margin-right: 5px; 
+}
+
+.feature-slide img:hover {
+	scale: 1.1;
+}
+
+/* .feature-slide:nth-child(1) {
+  background-color: #2b00ff;
+}
+.feature-slide:nth-child(2) {
+  background-color: #5500ff;
+}
+.feature-slide:nth-child(3) {
+  background-color: #8000ff;
+}
+.feature-slide:nth-child(4) {
+  background-color: #aa00ff;
+}
+.feature-slide:nth-child(5) {
+  background-color: #d500ff;
+}
+.feature-slide:nth-child(6) {
+  background-color: fuchsia;
+}
+.feature-slide:nth-child(7) {
+  background-color: #ff00d5;
+}
+.feature-slide:nth-child(8) {
+  background-color: #ff00aa;
+}
+.feature-slide:nth-child(9) {
+  background-color: #ff0080;
+}
+.feature-slide:nth-child(10) {
+  background-color: #ff0055;
+} */
+
+
+/*** Media Queries ***/
+@media (max-width: 575px){
+	.feature-slide {
+		width: 80px;
+		height: 110px;
+	}
+
+	.feature-slide img {
+		width: 105%;
+	}
+}
