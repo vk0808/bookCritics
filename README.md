@@ -1,6 +1,6 @@
 # bookCritics
 
-To view deomo [Clicke here](https://vk0808.github.io/bookCritics/docs/home.html)
+To view demo [Clicke here](https://vk0808.github.io/bookCritics/docs/home.html)
 
 ---
 
