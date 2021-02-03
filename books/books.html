@@ -165,7 +165,7 @@
     <!-- Book Info -->
     <div class="container-xl">
         <div class="row">
-            <div class="col-md-10 mx-auto mb-3">
+            <div class="col-md-10 mx-auto mb-3 book_preview_container">
                 <section aria-label="Book Information" class="bookpage_container">
 
                     <!-- Breadcrumb -->
@@ -179,7 +179,7 @@
                     <!-- Book Container -->
                     <div class="columns_container">
                         <div class="left_col">
-                            <div class="cover main_thumbnail_container start_reading_cover">
+                            <div class="main_thumbnail_container start_reading_cover">
                                 <div class="document_cell">
                                     <div class="document_image">
                                         <img class="loaded" src="../img/Empty-Book-Cover.png" alt="Book Cover">
@@ -236,7 +236,7 @@
                             <div class="summary">
                                 <h2 class="summary_header">Summary</h2>
                                 <div>
-                                    <div style="overflow-wrap: break-word;" class="ddd-truncated">
+                                    <div style="overflow-wrap: break-word;">
                                         <div>
                                             Viverra maecenas accumsan lacus vel facilisis volutpat est. Tellus orci ac auctor augue mauris augue neque gravida. In arcu cursus euismod quis viverra nibh. Integer eget aliquet nibh praesent tristique magna sit amet. Suspendisse sed nisi lacus sed viverra tellus in. 
                                             <br><br>
@@ -250,7 +250,6 @@
                                                 </div>
                                             </div>
                                             <button id="summary_more-btn" data-toggle="collapse" data-target="#summary_more-info" class="wrapper__text_button" type="button" onclick="read_msg_2()">Read more</button>
-
                                         </div>
                                     </div>
                                 </div>
@@ -258,11 +257,6 @@
                         </section>
                     </div>
                 </section>
-
-                <!-- Section Breaker -->
-                <div class="book_page_review_divider_wrapper">
-                    <hr class="book_page_review_divider">
-                </div>
                 
                 <!-- Author Profile -->
                 <div class="about_author_container" id="author_tag">
@@ -286,13 +280,13 @@
                             <div>
                                 <div class="wrapper__book_preview_components_about_author">
                                     <div class="author_description">
-                                    Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Viverra maecenas accumsan lacus vel facilisis volutpat est. Tellus orci ac auctor augue mauris augue neque gravida. In arcu cursus euismod quis viverra nibh. Integer eget aliquet nibh praesent tristique magna sit amet. Suspendisse sed nisi lacus sed viverra tellus in.
-                                    <br><br>
+                                        Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Viverra maecenas accumsan lacus vel facilisis volutpat est. Tellus orci ac auctor augue mauris augue neque gravida. In arcu cursus euismod quis viverra nibh. Integer eget aliquet nibh praesent tristique magna sit amet. Suspendisse sed nisi lacus sed viverra tellus in.
+                                        <br><br>
                                         <div id="author_more-info" class="collapse">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisi etiam dignissim diam quis enim lobortis scelerisque. Lectus nulla at volutpat diam ut venenatis tellus in. Quam id leo in vitae turpis massa sed. Sit amet luctus venenatis lectus magna fringilla. Lorem ipsum dolor sit amet consectetur. Faucibus vitae aliquet nec ullamcorper sit amet risus. Pharetra et ultrices neque ornare aenean euismod elementum nisi quis. 
-                                        <br><br>
-                                        Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Viverra maecenas accumsan lacus vel facilisis volutpat est. Tellus orci ac auctor augue mauris augue neque gravida. In arcu cursus euismod quis viverra nibh. Integer eget aliquet nibh praesent tristique magna sit amet. Suspendisse sed nisi lacus sed viverra tellus in. Non tellus orci ac auctor augue mauris augue neque. Ultrices sagittis orci a scelerisque purus semper eget. Eu augue ut lectus arcu bibendum at. Nunc mattis enim ut tellus elementum. Quam adipiscing vitae proin sagittis.
-                                        <br><br>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisi etiam dignissim diam quis enim lobortis scelerisque. Lectus nulla at volutpat diam ut venenatis tellus in. Quam id leo in vitae turpis massa sed. Sit amet luctus venenatis lectus magna fringilla. Lorem ipsum dolor sit amet consectetur. Faucibus vitae aliquet nec ullamcorper sit amet risus. Pharetra et ultrices neque ornare aenean euismod elementum nisi quis. 
+                                            <br><br>
+                                            Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Viverra maecenas accumsan lacus vel facilisis volutpat est. Tellus orci ac auctor augue mauris augue neque gravida. In arcu cursus euismod quis viverra nibh. Integer eget aliquet nibh praesent tristique magna sit amet. Suspendisse sed nisi lacus sed viverra tellus in. Non tellus orci ac auctor augue mauris augue neque. Ultrices sagittis orci a scelerisque purus semper eget. Eu augue ut lectus arcu bibendum at. Nunc mattis enim ut tellus elementum. Quam adipiscing vitae proin sagittis.
+                                            <br><br>
                                         </div>
                                     </div>
                                     <button id="author_more-btn" data-toggle="collapse" data-target="#author_more-info" class="wrapper__text_button" type="button" onclick="read_msg_1()">Read more</button>
@@ -300,11 +294,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Section Breaker -->
-                <div class="book_page_review_divider_wrapper">
-                    <hr class="book_page_review_divider">
                 </div>
 
                 <!-- Ratings & Reviews Section -->
@@ -421,7 +410,7 @@
                                     <div class="ratings">
                                         <!-- Review left -->
                                         <div class="user_name">alan</div>
-                                        <div class="auto__shared__star_ratings">
+                                        <div class="star_ratings">
                                             <span class="stars">
                                                 <i class="fa fa-star checked"></i>
                                                 <i class="fa fa-star checked"></i>
@@ -522,13 +511,12 @@
                                         <span class="optional_text">(optional)</span>
                                         <textarea name="text" class="review_body" maxlength="20000" spellcheck="false"></textarea>
                                     </label>
+                                    <button type="button" class="post_review btn btn-primary">
+                                        <a href="./books.html" title="Post Review">Post Review</a>
+                                    </button>
                                 </div>
                             </div>
-
                         </div>
-                        <button type="button" class="post_review btn btn-primary">
-                            <a href="./books.html" title="Post Review">Post Review</a>
-                        </button>
                     </div>
                 </div>
             </div>
@@ -540,7 +528,7 @@
     <div class="home-newsletter">
         <div class="container">
             <div class="row text-center">
-                <div class="icon-box mx-auto single">
+                <div class="icon-box mx-auto single mt-4">
                     <i id="icon-box1" class="fa fa-envelope-open-o"></i>
                     <span><h4 class="font-weight-bold">Subscribe To Our Newsletter</h4></span>
                     <p>Want to get updated on the latest release of new books, subscribe to our newsletter and get delivered directly in your inbox.</p>
@@ -631,7 +619,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- Custom JavaScript -->
-    <script type="text/javascript" src="../js/main.js"></script>
     <script type="text/javascript" src="../js/search.js"></script>
     <script type="text/javascript" src="../js/subscribe.js"></script>
     <script type="text/javascript" src="../js/carousel.js"></script>
