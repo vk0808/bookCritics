@@ -1,0 +1,449 @@
+/* Book Container */
+.columns_container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Left Column  */
+.left_col {
+    max-width: 260px;
+}
+
+.main_thumbnail_container {
+    position: relative;
+}
+
+.main_thumbnail_container img {
+	width: 100%;
+}
+
+.main_thumbnail_container img.loaded {
+    opacity: 1;
+}
+
+/* Right Column */
+.right_col {
+    margin-left: 21px;
+    flex-basis: 50%;
+    flex-grow: 2;
+}
+
+.document_title {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.contributors {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.contributor_line {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.contributor {
+    font-weight: 700;
+}
+
+/* Stars */
+.ratings_container {
+    margin: 8px 0 16px;
+}
+
+.ratings_wrapper {
+    margin-right: 20px;
+}
+
+.stars .checked {
+	color: #f1c40f;
+}
+
+.stats {
+    color: #57617a;
+}
+
+/* Editorial Content */
+.editorial_blurb {
+    font-size: 18px;
+}
+
+.editorial_blurb .editorial_header {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.editorial_blurb .blurb_description {
+    margin-bottom: 24px;
+}
+
+/* Summary Content */
+.summary {
+    font-size: 18px;
+    margin-bottom: 32px;
+    min-height: 92px;
+}
+
+.summary .summary_header {
+    font-size: 22px;
+    font-weight: 700;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    margin: 12px 0 16px;
+}
+
+/* Meta Data */
+.metadata {
+    display: inline-block;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.metadata .meta_title {
+    font-size: 14px;
+    color: #17a2b8;
+    padding-right: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 8px;
+    display: inline-block;
+    position: relative;
+    padding-right: 0;
+}
+
+.metadata .meta_description {
+    display: flex;
+    position: relative;
+    margin-left: 0;
+    flex: 0 0 30%;
+    line-height: 1;
+    margin-bottom: 16px;
+}
+
+/* Author */
+.about_author_container {
+    padding: 0 20px;
+}
+
+.about_author_container .section_header {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.about_author_container .author_banner {
+    margin-bottom: 32px;
+}
+
+.about_author_container .author_profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.auto__shared__persona_icon.large {
+    border-radius: 50%;
+    height: 72px;
+    width: 72px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.auto__shared__persona_icon {
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #e9edf8;
+    box-sizing: border-box;
+    color: #57617a;
+}
+
+.profile_thumbnail img {
+	width: 100%;
+}
+
+.author_profile .author_name {
+    margin-left: 14px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e7b85;
+}
+
+.wrapper__book_preview_components_about_author .author_description {
+    margin-bottom: 16px;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.5em;
+    max-height: 4.5em;
+}
+
+
+.wrapper__text_button {
+    font-family: Source Sans Pro,sans-serif;
+    background-color: transparent;
+    border-radius: 0;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    color: #1e7b85;
+    font-size: 16px;
+    font-weight: 700;
+    min-height: 0;
+    line-height: normal;
+    min-width: 0;
+    padding: 0;
+}
+
+/* Reviews & Ratings */
+.review_overview_wrapper {
+    padding: 0 20px;
+}
+
+.reviews_header {
+	font-size: 28px;
+    font-weight: 700;
+}
+
+.ratings_average {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.ratings_and_reviews_totals {
+    font-size: 14px;
+}
+
+.ratings_side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+
+.middle {
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+
+/* User Review */
+.auto__shared__review_form {
+    background-color: #f8f9fd;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.auto__shared__review_form .star_label {
+    display: flex;
+    flex-direction: column;
+}
+
+.auto__shared__review_form .star_label_text {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.write_stars {
+	direction: rtl;
+	margin: 0 auto;
+	
+}
+
+.write_stars label {
+	cursor: pointer;
+	padding: 10px;
+	margin: 0;
+}
+
+.write_stars .fa {
+	color: #f1c40f;
+	font-size: 30px;
+}
+
+input:not(:checked) ~ label:not([for="difficulty-1"]) > .fa-star { display: none; }
+label:hover > .fa-star-o,
+label:hover ~ label > .fa-star-o,
+input:checked ~ label > .fa-star-o { display: none; }
+label:hover > .fa-star,
+label:hover ~ label > .fa-star,
+input:checked ~ label > .fa-star { display: inline-block !important; }
+
+.textarea_label {
+    margin-top: 24px;
+    display: inline-block;
+    margin: 14px 0;
+    width: 100%;
+}
+
+.textarea_label label {
+    display: block;
+}
+
+.textarea_label .label_text, .textarea_label .optional_text {
+    font-size: 16px;
+}
+
+.wrapper__text_area .textarea_label .label_text {
+    font-size: 16px;
+    color: #1c263d;
+    font-weight: 700;
+}
+
+.wrapper__text_area .textarea_label .optional_text {
+    font-weight: 400;
+}
+
+.auto__shared_react_review_form .textarea_label .review_body {
+    font-size: 14px;
+}
+.wrapper__text_area .textarea_label textarea {
+    margin-top: 10px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #8f929e;
+    padding: 8px 14px;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-size: 16px;
+    font-family: Source Sans Pro,sans-serif;
+}
+
+.post_review {
+	margin-top: 20px;
+}
+
+.post_review a {
+	color: #f8f9fd;
+	text-decoration: none;
+}
+
+/* Critic Review */
+.wrapper__book_preview_components_critic_reviews {
+	display: inline-block;
+}
+
+.wrapper__book_preview_components_critic_reviews .review_list_wrapper {
+    padding: 0 20px;
+}
+
+.wrapper__book_preview_components_critic_reviews .review_list_header {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 32px;
+    color: #000514;
+}
+
+.wrapper__book_preview_components_critic_reviews .critic_reviews_list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.wrapper__book_preview_components_critic_reviews .critic_review {
+    margin-top: 16px;
+    border-left: 4px solid #e9edf8;
+    padding-left: 24px;
+}
+
+.wrapper__book_preview_components_critic_reviews .critic_review .author {
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.wrapper__book_preview_components_critic_reviews .critic_review p {
+    font-style: italic;
+}
+
+.critic_review .author:before {
+	content: " - ";
+}
+
+/* Reader Reviews */
+.review_list_wrapper {
+    padding: 0 20px;
+}
+
+.review_list_header {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 32px;
+}
+
+.book_review_wrapper:first-child {
+    margin-top: 0;
+}
+
+.book_review_wrapper {
+    margin: 24px 0 12px;
+}
+
+.book_review_wrapper .book_review {
+    display: flex;
+}
+
+.book_review_wrapper .ratings {
+    display: flex;
+    flex-direction: column;
+    margin-right: 32px;
+    flex: 0 0 156px;
+}
+
+.book_review_wrapper .user_name {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.book_review_wrapper .ratings .star_ratings {
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.wrapper__review_text {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.wrapper__review_text .review_text {
+    display: block;
+    font-size: 16px;
+    overflow: hidden;
+    line-height: 1.6875em;
+    max-height: 10.125em;
+}
