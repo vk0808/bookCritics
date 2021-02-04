@@ -8,6 +8,11 @@ body {
 	font-family: Barlow, Helvetica, Arial, sans-serif;
 }
 
+
+.nav-link {
+	font-size: larger;
+}
+
 /* All Jumbotron */
 .jumbotron {
 	background-color: #E8BCC9;

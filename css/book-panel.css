@@ -14,6 +14,7 @@
 
 #tag-list {
     text-align: center;
+    padding: 0;
 }
 
 #tag-list li {
@@ -27,6 +28,7 @@
 }
 #tag-list li a {
     color: #6c757d;
+    font-size: larger;
     padding: 10px 20px;
     text-transform: uppercase;
 }
