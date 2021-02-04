@@ -126,11 +126,10 @@
 		margin: 0 20px 10px 20px;
 	}
 
-
 	.home-newsletter .single .form-control {
 	    height: 40px;
 	    width: 200px;
-	    border-radius: 10px;
+	    border-radius: 25px;
 	    margin-bottom: 10px;
 	}
 
@@ -141,7 +140,8 @@
 
 	.home-newsletter .single .sub-btn {
 	    min-height: 40px;
-	    border-radius: 10px;
+	    padding: 0 20px;
+	    border-radius: 25px;
 	}
 
 }
