@@ -9,6 +9,7 @@
     max-width: 260px;
 }
 
+
 .main_thumbnail_container {
     position: relative;
 }
@@ -446,4 +447,15 @@ input:checked ~ label > .fa-star { display: inline-block !important; }
     overflow: hidden;
     line-height: 1.6875em;
     max-height: 10.125em;
+}
+
+/* Media Queries */
+@media (max-width: 575px) {
+	.left_col {
+	    max-width: 120px;
+	}
+
+	.book_review_wrapper .ratings {
+		flex: 0 0 106px;
+	}
 }
